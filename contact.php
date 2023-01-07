@@ -55,28 +55,33 @@
           </div><!-- End Info Item -->
 
         </div>
-
+        <!-- Form started -->
         <form action="forms/contact.php" method="post" role="form" class="php-email-form p-3 p-md-4">
           <div class="row">
             <div class="col-xl-6 form-group">
-              <input type="text" name="name" class="form-control" id="name" placeholder="Your Name" required>
+              <input type="text" name="name" class="form-control" id="name" placeholder="Your Name">
+              <p class="text-error"><?php echo $_SESSION['errors']['name'] ?? ''; ?></p>
             </div>
             <div class="col-xl-6 form-group">
-              <input type="email" class="form-control" name="email" id="email" placeholder="Your Email" required>
+              <input type="email" class="form-control" name="email" id="email" placeholder="Your Email">
+              <p class="text-error"><?php echo $_SESSION['errors']['email'] ?? ''; ?></p>
             </div>
           </div>
           <div class="form-group">
-            <input type="text" class="form-control" name="subject" id="subject" placeholder="Subject" required>
+            <input type="text" class="form-control" name="subject" id="subject" placeholder="Subject">
+            <p class="text-error"><?php echo $_SESSION['errors']['subject'] ?? ''; ?></p>
           </div>
           <div class="form-group">
-            <textarea class="form-control" name="message" rows="5" placeholder="Message" required></textarea>
+            <textarea class="form-control" name="message" rows="5" placeholder="Message"></textarea>
+            <p class="text-error"><?php echo $_SESSION['errors']['message'] ?? '';  ?></p>
           </div>
+          <!-- 
           <div class="my-3">
             <div class="loading">Loading</div>
             <div class="error-message"></div>
             <div class="sent-message">Your message has been sent. Thank you!</div>
-          </div>
-          <div class="text-center"><button type="submit">Send Message</button></div>
+          </div> -->
+          <div class="text-center"><button type="submit" name="submit" value = "submit">Send Message</button></div>
         </form>
         <!--End Contact Form -->
 

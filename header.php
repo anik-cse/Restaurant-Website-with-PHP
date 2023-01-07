@@ -36,5 +36,9 @@
   ======================================================== -->
 </head>
 
+<!-- active session -->
+<?php session_start(); ?>
+
+
 <body>
     <?php include 'navigation.php'; ?>
