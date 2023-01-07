@@ -8,12 +8,15 @@
     <!-- ======= About Section ======= -->
     <?php include 'aboutus.php'; ?>
     <!-- End About Section -->
+
     <!-- ======= Why Us Section ======= -->
     <?php include 'whyus.php'; ?>
     <!-- End Why Box -->
+
     <!-- ======= Stats Counter Section ======= -->
     <?php include 'counter.php'; ?>
     <!-- End Stats Counter Section -->
+    
     <!-- ======= Menu Section ======= -->
     <?php include 'menu.php'; ?>
     <!-- ======= Testimonials Section ======= -->
@@ -35,7 +38,7 @@
     <!-- ======= Gallery Section ======= -->
     <?php include 'gallery.php'; ?>
     <!-- End Gallery Section -->
-    <?php include 'gallery.php'; ?>
+
     <!-- ======= Contact Section ======= -->
     <?php include 'contact.php'; ?>
     <!-- End Contact Section -->
