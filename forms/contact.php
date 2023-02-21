@@ -11,15 +11,19 @@ if(isset($_POST['submit'])){
     // Adding validation 
     if(empty($name)){
         $errors['name'] = "You can't leave your name empty.";
-    }if(empty($email)){
+    }
+    
+    if(empty($email)){
         $errors['email'] = "You can't leave your email empty.";
-    }if(empty($subject)){
+    }
+    
+    if(empty($subject)){
         $errors['subject'] = "You can't leave your subject empty.";
-    }if(empty($message)){
+    }
+    
+    if(empty($message)){
         $errors['message'] = "You can't leave your message empty.";
     }
-
-    
 
     if(count($errors) > 0){
         $_SESSION['errors'] = $errors;

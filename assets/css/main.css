@@ -1531,7 +1531,7 @@ section {
   }
 }
 
-.contact .text-error {color: rgba(252, 1, 1, 0.182);}
+.contact .text-error {color: rgb(252, 1, .15);}
 
 /*--------------------------------------------------------------
 # Hero Section
